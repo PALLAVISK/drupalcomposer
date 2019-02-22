@@ -1,0 +1,21 @@
+uuid: b9489ddc-d78f-4f99-9ea7-760b9c7671bd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_group_contact
+field_name: field_group_contact
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

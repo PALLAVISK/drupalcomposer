@@ -1,0 +1,50 @@
+uuid: 3b95b4a9-ecbe-4de8-b910-654db4355103
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.vehicles.body
+    - field.field.node.vehicles.field_tags
+    - field.field.node.vehicles.field_vehicle_images
+    - node.type.vehicles
+  module:
+    - image
+    - text
+    - user
+id: node.vehicles.teaser
+targetEntityType: node
+bundle: vehicles
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_tags:
+    type: entity_reference_label
+    weight: 3
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_vehicle_images:
+    type: image
+    weight: 2
+    region: content
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

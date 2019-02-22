@@ -1,0 +1,19 @@
+uuid: 9170cd34-81c1-408e-89fd-3f8955d32af4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dish_name
+    - node.type.recipe
+id: node.recipe.field_dish_name
+field_name: field_dish_name
+entity_type: node
+bundle: recipe
+label: 'Dish name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

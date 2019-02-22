@@ -1,0 +1,28 @@
+uuid: 78056045-d73a-4658-be71-fffbe4eff97d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_events_sponsered
+    - node.type.events
+    - node.type.user_group
+id: node.user_group.field_events_sponsered
+field_name: field_events_sponsered
+entity_type: node
+bundle: user_group
+label: 'events sponsered'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      events: events
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

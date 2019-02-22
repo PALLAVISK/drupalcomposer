@@ -1,0 +1,23 @@
+uuid: ebe86ab5-794d-46e2-a006-a1114751bdda
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_link
+    - node.type.shopping_site
+  module:
+    - link
+id: node.shopping_site.field_product_link
+field_name: field_product_link
+entity_type: node
+bundle: shopping_site
+label: 'product link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

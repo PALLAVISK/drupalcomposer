@@ -1,0 +1,9 @@
+uuid: cc6fb57f-8488-484c-b135-aa8ef21972c8
+langcode: en
+status: true
+dependencies: {  }
+name: Interns
+vid: interns
+description: 'qed42 interns'
+hierarchy: 0
+weight: 0

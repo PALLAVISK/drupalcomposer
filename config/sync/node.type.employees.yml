@@ -1,0 +1,18 @@
+uuid: 3e4a51e5-49cd-4c8c-887a-2d12e186caec
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: employees
+type: employees
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

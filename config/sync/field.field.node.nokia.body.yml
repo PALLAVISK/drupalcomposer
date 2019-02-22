@@ -1,0 +1,22 @@
+uuid: 5ccb4858-4c50-476d-b35e-b093c2ad4cff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.nokia
+  module:
+    - text
+id: node.nokia.body
+field_name: body
+entity_type: node
+bundle: nokia
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

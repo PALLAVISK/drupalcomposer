@@ -1,0 +1,22 @@
+uuid: 2cc0df93-01a5-4c8e-aa22-0be23d223fd0
+langcode: en
+status: true
+dependencies:
+  theme:
+    - industrial_zymphonies_theme
+_core:
+  default_config_hash: cPieLVZFnvvnQOKNgS0w0FgUq-pTEBsO-RIzZFTJe9o
+id: industrial_zymphonies_theme_local_tasks
+theme: industrial_zymphonies_theme
+region: content
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

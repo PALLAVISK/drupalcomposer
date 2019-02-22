@@ -1,0 +1,21 @@
+uuid: 6e73d62e-bf5b-4570-9571-b3cbfde534a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.rides
+  module:
+    - text
+id: taxonomy_term.rides.default
+targetEntityType: taxonomy_term
+bundle: rides
+mode: default
+content:
+  description:
+    label: above
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

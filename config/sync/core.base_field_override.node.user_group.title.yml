@@ -1,0 +1,18 @@
+uuid: 6108476f-a3f2-41c2-a9f0-361a57593dee
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.user_group
+id: node.user_group.title
+field_name: title
+entity_type: node
+bundle: user_group
+label: 'user group'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

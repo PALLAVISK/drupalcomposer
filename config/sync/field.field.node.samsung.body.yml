@@ -1,0 +1,22 @@
+uuid: df281642-f80c-4061-ac24-060b39f84a33
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.samsung
+  module:
+    - text
+id: node.samsung.body
+field_name: body
+entity_type: node
+bundle: samsung
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

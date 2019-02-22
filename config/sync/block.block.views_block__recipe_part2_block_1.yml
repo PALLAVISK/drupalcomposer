@@ -1,0 +1,30 @@
+uuid: 265ed5aa-0e38-46d1-9da1-b283cf68cb99
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.recipe_part2
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__recipe_part2_block_1
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:recipe_part2-block_1'
+settings:
+  id: 'views_block:recipe_part2-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

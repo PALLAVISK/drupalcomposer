@@ -1,0 +1,28 @@
+uuid: 59dc4486-0de6-4b67-91ce-03f9854f0c7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_autho
+    - node.type.page
+id: node.page.field_autho
+field_name: field_autho
+entity_type: node
+bundle: page
+label: author
+description: 'start typing the name of the author...'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

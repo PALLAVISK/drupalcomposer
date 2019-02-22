@@ -1,0 +1,26 @@
+uuid: e1a70bb0-1b4e-49c0-9178-1df581df5029
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - industrial_zymphonies_theme
+_core:
+  default_config_hash: 0UmoqB0F6fKO9pZKpKCZOX5zI7sB1NzzDhNjlPDqbY4
+id: industrial_zymphonies_theme_footer
+theme: industrial_zymphonies_theme
+region: footer_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Footer menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

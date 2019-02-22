@@ -1,0 +1,39 @@
+uuid: 47b4a3a8-6dc5-42aa-88ce-00afbac367c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.employees.body
+    - field.field.node.employees.field_tags
+    - node.type.employees
+  module:
+    - text
+    - user
+id: node.employees.teaser
+targetEntityType: node
+bundle: employees
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_tags:
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

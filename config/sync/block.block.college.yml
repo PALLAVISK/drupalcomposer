@@ -1,0 +1,25 @@
+uuid: 82d73a4b-5e1d-4a23-8bbc-ed11fdf026c3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d50b0ed5-e90e-4143-81cd-7bc570ddcdd4'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: college
+theme: bartik
+region: featured_bottom_first
+weight: 0
+provider: null
+plugin: 'block_content:d50b0ed5-e90e-4143-81cd-7bc570ddcdd4'
+settings:
+  id: 'block_content:d50b0ed5-e90e-4143-81cd-7bc570ddcdd4'
+  label: college
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

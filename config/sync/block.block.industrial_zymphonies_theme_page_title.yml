@@ -1,0 +1,20 @@
+uuid: 909aa8a1-4b32-4ac3-b621-d33a91d8a07c
+langcode: en
+status: false
+dependencies:
+  theme:
+    - industrial_zymphonies_theme
+_core:
+  default_config_hash: g37ZkZADBIGqLznsD67BWeyvUGs3jepd-C3Zqz7O0GY
+id: industrial_zymphonies_theme_page_title
+theme: industrial_zymphonies_theme
+region: page_title
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

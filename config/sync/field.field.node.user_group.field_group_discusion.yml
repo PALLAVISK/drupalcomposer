@@ -1,0 +1,21 @@
+uuid: 15c42683-0833-4a0c-b95a-7395e1c83902
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_group_discusion
+    - node.type.user_group
+  module:
+    - options
+id: node.user_group.field_group_discusion
+field_name: field_group_discusion
+entity_type: node
+bundle: user_group
+label: 'group discusion'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

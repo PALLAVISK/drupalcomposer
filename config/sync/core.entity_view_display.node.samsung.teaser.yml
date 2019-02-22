@@ -1,0 +1,50 @@
+uuid: c8b1bc03-6444-4ac9-96d6-8fb5b9478276
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.samsung.body
+    - field.field.node.samsung.field_image
+    - field.field.node.samsung.field_tags
+    - node.type.samsung
+  module:
+    - image
+    - text
+    - user
+id: node.samsung.teaser
+targetEntityType: node
+bundle: samsung
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 3
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_image:
+    type: image
+    weight: 1
+    region: content
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_tags:
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

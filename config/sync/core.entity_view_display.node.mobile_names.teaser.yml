@@ -1,0 +1,39 @@
+uuid: ae0e3db6-d61e-4460-93c2-99ff7c0ba3ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mobile_names.body
+    - field.field.node.mobile_names.field_tags
+    - node.type.mobile_names
+  module:
+    - text
+    - user
+id: node.mobile_names.teaser
+targetEntityType: node
+bundle: mobile_names
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 2
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_tags:
+    type: entity_reference_label
+    weight: 1
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

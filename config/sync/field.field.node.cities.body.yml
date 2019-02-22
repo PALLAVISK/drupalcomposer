@@ -1,0 +1,22 @@
+uuid: 9c3d0978-dd46-4c3e-9160-cf2f11994470
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.cities
+  module:
+    - text
+id: node.cities.body
+field_name: body
+entity_type: node
+bundle: cities
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

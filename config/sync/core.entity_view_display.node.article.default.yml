@@ -1,0 +1,101 @@
+uuid: 2efd8d89-ebd4-4698-b96e-4a6f7efaf378
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.article.body
+    - field.field.node.article.comment
+    - field.field.node.article.field_demo_field
+    - field.field.node.article.field_features_of_media
+    - field.field.node.article.field_gallery
+    - field.field.node.article.field_image
+    - field.field.node.article.field_metatag
+    - field.field.node.article.field_tags
+    - image.style.large
+    - node.type.article
+  module:
+    - image
+    - metatag
+    - options
+    - text
+    - user
+_core:
+  default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
+id: node.article.default
+targetEntityType: node
+bundle: article
+mode: default
+content:
+  body:
+    type: text_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+    label: hidden
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_demo_field:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_features_of_media:
+    type: entity_reference_entity_view
+    weight: 5
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_gallery:
+    type: entity_reference_entity_view
+    weight: 6
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_image:
+    type: image
+    weight: 0
+    region: content
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    label: hidden
+  field_metatag:
+    weight: 11
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_tags:
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  flag_bookmark:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  comment: true

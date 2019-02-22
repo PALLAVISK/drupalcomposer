@@ -1,0 +1,22 @@
+uuid: e604a2d1-1a10-40ac-9529-acbdb056e4c7
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - awesome_zymphonies_theme
+_core:
+  default_config_hash: IhYZr8or9vZ7jwn_comdhI_9zHgO7-MMg2ZnOa6NDr4
+id: awesome_zymphonies_theme_search
+theme: awesome_zymphonies_theme
+region: search
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

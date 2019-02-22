@@ -1,0 +1,13 @@
+uuid: 07e00dae-6520-4389-b5ff-3367233e9fdf
+langcode: en
+status: true
+dependencies: {  }
+id: seller
+label: Seller
+weight: 4
+is_admin: null
+permissions:
+  - 'create terms in product_type'
+  - 'edit any shopping_site content'
+  - 'revert shopping_site revisions'
+  - 'view shopping_site revisions'

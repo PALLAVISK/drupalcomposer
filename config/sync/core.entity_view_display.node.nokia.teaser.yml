@@ -1,0 +1,50 @@
+uuid: ff025198-e0f3-4e15-85dd-3499e51908fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.nokia.body
+    - field.field.node.nokia.field_image
+    - field.field.node.nokia.field_tags
+    - node.type.nokia
+  module:
+    - image
+    - text
+    - user
+id: node.nokia.teaser
+targetEntityType: node
+bundle: nokia
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 2
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_image:
+    type: image
+    weight: 1
+    region: content
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_tags:
+    type: entity_reference_label
+    weight: 3
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,29 @@
+uuid: 864d4cc4-d90e-4679-b364-25e95c0612d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_type
+    - node.type.shopping_site
+    - taxonomy.vocabulary.product_type
+id: node.shopping_site.field_product_type
+field_name: field_product_type
+entity_type: node
+bundle: shopping_site
+label: 'product type'
+description: 'Details of products'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      product_type: product_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

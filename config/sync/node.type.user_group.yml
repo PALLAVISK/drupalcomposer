@@ -1,0 +1,17 @@
+uuid: 7e62045f-3694-4f85-84f3-84f140d1dee6
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'user groups'
+type: user_group
+description: 'this is user group'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

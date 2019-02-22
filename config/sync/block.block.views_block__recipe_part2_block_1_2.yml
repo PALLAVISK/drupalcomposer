@@ -1,0 +1,41 @@
+uuid: dc894ccf-06f6-4081-b908-6c77d2e3479e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.recipe_part2
+  module:
+    - ctools
+    - node
+    - views
+  theme:
+    - bartik
+id: views_block__recipe_part2_block_1_2
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:recipe_part2-block_1'
+settings:
+  id: 'views_block:recipe_part2-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      recipe: recipe
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      recipe: recipe
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

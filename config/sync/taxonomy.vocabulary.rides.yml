@@ -1,0 +1,9 @@
+uuid: 7591e67e-6c4f-4d74-8d41-9d70b7f9179b
+langcode: en
+status: true
+dependencies: {  }
+name: rides
+vid: rides
+description: 'choose your ride'
+hierarchy: 0
+weight: 0

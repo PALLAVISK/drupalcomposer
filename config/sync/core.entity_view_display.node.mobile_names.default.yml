@@ -1,0 +1,37 @@
+uuid: b748432a-c08a-4fe4-95eb-1cd06daf4086
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mobile_names.body
+    - field.field.node.mobile_names.field_tags
+    - node.type.mobile_names
+  module:
+    - text
+    - user
+id: node.mobile_names.default
+targetEntityType: node
+bundle: mobile_names
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_tags:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

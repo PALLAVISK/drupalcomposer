@@ -1,0 +1,12 @@
+uuid: 0175c070-b4c7-4bac-87c2-13bcf9142c3c
+langcode: en
+status: true
+dependencies: {  }
+id: manager
+label: manager
+weight: 6
+is_admin: null
+permissions:
+  - 'delete blog revisions'
+  - 'use qed_workflow transition publish'
+  - 'view any unpublished content'

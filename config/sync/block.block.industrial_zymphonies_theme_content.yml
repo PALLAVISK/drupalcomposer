@@ -1,0 +1,22 @@
+uuid: 993ffbb5-2152-4336-89b8-8875eb646181
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - industrial_zymphonies_theme
+_core:
+  default_config_hash: shqlL_gVNoNZU3O8AqzyFIMeY919ypL4BTisma_FIHA
+id: industrial_zymphonies_theme_content
+theme: industrial_zymphonies_theme
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

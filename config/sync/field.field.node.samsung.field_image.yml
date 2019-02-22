@@ -1,0 +1,38 @@
+uuid: b90f7d43-6ed5-45e9-8dae-b85f0748b0e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.samsung
+  module:
+    - image
+id: node.samsung.field_image
+field_name: field_image
+entity_type: node
+bundle: samsung
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: e83dc7a8-ca56-42bd-841a-e9c33f57980e
+    alt: ''
+    title: ''
+    width: 1128
+    height: 1746
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,24 @@
+uuid: 58905efe-ffc1-470c-92a8-006039dd12f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.newly_added_events
+  module:
+    - views
+  theme:
+    - bartik
+id: views_block__newly_added_events_block_1
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:newly_added_events-block_1'
+settings:
+  id: 'views_block:newly_added_events-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

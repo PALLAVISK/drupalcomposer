@@ -1,0 +1,23 @@
+uuid: 29a6054e-18a4-42b2-9a87-1ffd435f6837
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.event
+  module:
+    - views
+  theme:
+    - bartik
+id: exposedformeventpage_1
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:event-page_1'
+settings:
+  id: 'views_exposed_filter_block:event-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility: {  }

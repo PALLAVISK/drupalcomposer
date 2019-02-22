@@ -1,0 +1,23 @@
+uuid: 80d4f220-a5df-43bf-ab71-ceba7340cc29
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prices
+    - node.type.shopping_site
+id: node.shopping_site.field_prices
+field_name: field_prices
+entity_type: node
+bundle: shopping_site
+label: prices
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

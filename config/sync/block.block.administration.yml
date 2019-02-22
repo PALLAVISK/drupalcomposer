@@ -1,0 +1,24 @@
+uuid: 699bac4e-33eb-4bfb-9189-4b84934d8fc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.admin
+  module:
+    - system
+  theme:
+    - bartik
+id: administration
+theme: bartik
+region: footer_fourth
+weight: 0
+provider: null
+plugin: 'system_menu_block:admin'
+settings:
+  id: 'system_menu_block:admin'
+  label: Administration
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

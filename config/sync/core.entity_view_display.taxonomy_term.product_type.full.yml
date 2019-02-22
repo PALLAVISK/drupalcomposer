@@ -1,0 +1,22 @@
+uuid: 98b519e9-ee13-4f72-b19e-ef945c74804f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.full
+    - taxonomy.vocabulary.product_type
+  module:
+    - text
+id: taxonomy_term.product_type.full
+targetEntityType: taxonomy_term
+bundle: product_type
+mode: full
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

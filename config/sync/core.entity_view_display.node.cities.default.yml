@@ -1,0 +1,57 @@
+uuid: 15967c19-165e-4e79-b948-0832486c5ebd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cities.body
+    - field.field.node.cities.field_book_categories
+    - field.field.node.cities.field_city_metatag
+    - field.field.node.cities.field_cityimage
+    - node.type.cities
+  module:
+    - image
+    - metatag
+    - text
+    - user
+id: node.cities.default
+targetEntityType: node
+bundle: cities
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_book_categories:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_city_metatag:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_cityimage:
+    weight: 103
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

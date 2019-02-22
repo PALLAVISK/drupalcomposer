@@ -1,0 +1,22 @@
+uuid: b274ad0e-ec57-45b5-93a1-1c9fb8d0595b
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - awesome_zymphonies_theme
+_core:
+  default_config_hash: 2V6tmyadDOEYUvWWZqDg9llzLU4ITnkd1YHk6lObq-w
+id: awesome_zymphonies_theme_help
+theme: awesome_zymphonies_theme
+region: highlighted
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

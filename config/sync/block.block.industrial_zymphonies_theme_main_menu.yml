@@ -1,0 +1,26 @@
+uuid: 22dd6232-b462-4275-aa3e-7a6d4e6c771b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - industrial_zymphonies_theme
+_core:
+  default_config_hash: RKlkfNNb7QqbKIAQK8VbYMQV7afeMJ_giwlmPuWagq4
+id: industrial_zymphonies_theme_main_menu
+theme: industrial_zymphonies_theme
+region: primary_menu
+weight: 10
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+visibility: {  }

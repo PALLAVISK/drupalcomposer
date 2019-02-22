@@ -1,0 +1,11 @@
+uuid: 4de0d531-2e0e-4a88-9c81-6589438a25aa
+langcode: en
+status: true
+dependencies: {  }
+id: customer
+label: Customer
+weight: 3
+is_admin: null
+permissions:
+  - 'edit any shopping_site content'
+  - 'view shopping_site revisions'

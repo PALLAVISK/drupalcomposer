@@ -1,0 +1,21 @@
+uuid: 794daa4e-8389-4c27-817c-3e4da55d5867
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_colors
+    - node.type.shopping_site
+  module:
+    - options
+id: node.shopping_site.field_colors
+field_name: field_colors
+entity_type: node
+bundle: shopping_site
+label: colors
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_float

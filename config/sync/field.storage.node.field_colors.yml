@@ -1,0 +1,42 @@
+uuid: 9dbe394e-0850-4957-b89e-5d4c14cc2ca5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_colors
+field_name: field_colors
+entity_type: node
+type: list_float
+settings:
+  allowed_values:
+    -
+      value: !!float 0
+      label: Red
+    -
+      value: !!float 1
+      label: green
+    -
+      value: !!float 2
+      label: yellow
+    -
+      value: !!float 3
+      label: blue
+    -
+      value: !!float 4
+      label: white
+    -
+      value: !!float 5
+      label: black
+    -
+      value: !!float 6
+      label: grey
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

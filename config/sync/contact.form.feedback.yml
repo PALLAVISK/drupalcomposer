@@ -1,0 +1,14 @@
+uuid: 7de21811-16ab-4215-9935-dab20f2df538
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - pallavi.kadam@qed42.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

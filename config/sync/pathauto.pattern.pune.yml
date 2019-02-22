@@ -1,0 +1,22 @@
+uuid: 8c332bef-da8d-41f9-9e84-01a839639d3b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: pune
+label: pune
+type: 'canonical_entities:node'
+pattern: 'basic/[node:title]/[node:author]'
+selection_criteria:
+  8904d847-f1be-4937-be8c-8cc6dc6835d1:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 8904d847-f1be-4937-be8c-8cc6dc6835d1
+selection_logic: and
+weight: -5
+relationships: {  }

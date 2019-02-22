@@ -1,0 +1,25 @@
+uuid: 0483ccba-26dd-4985-b332-11bfddbceefb
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.user_group_view
+  module:
+    - views
+  theme:
+    - bartik
+id: views_block__user_group_view_block_1
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:user_group_view-block_1'
+settings:
+  id: 'views_block:user_group_view-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

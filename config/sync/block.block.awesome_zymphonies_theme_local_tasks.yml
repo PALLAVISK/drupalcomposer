@@ -1,0 +1,22 @@
+uuid: 78ecfed4-634d-4d09-af6b-71df32d2928b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - awesome_zymphonies_theme
+_core:
+  default_config_hash: 1-32LVe_oJO6PtARCoc6n2kOiVoL4Qw2x2JzmdC7RRE
+id: awesome_zymphonies_theme_local_tasks
+theme: awesome_zymphonies_theme
+region: content
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

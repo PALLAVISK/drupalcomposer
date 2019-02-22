@@ -1,0 +1,23 @@
+uuid: 10ce1596-d2b3-461e-a9db-13d6d3d2ff37
+langcode: en
+status: true
+dependencies:
+  module:
+    - forum
+  theme:
+    - bartik
+id: newforumtopics
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: forum_new_block
+settings:
+  id: forum_new_block
+  label: 'New forum topics'
+  provider: forum
+  label_display: visible
+  properties:
+    administrative: '1'
+  block_count: 5
+visibility: {  }

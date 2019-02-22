@@ -1,0 +1,25 @@
+uuid: a2990b42-29a1-4804-bcac-f328a8b50d36
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - industrial_zymphonies_theme
+_core:
+  default_config_hash: 04gtOxD4NHYT7aCNfQaDzkb-R8qJAQ6sC9QEVfcIrWU
+id: industrial_zymphonies_theme_branding
+theme: industrial_zymphonies_theme
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

@@ -1,0 +1,9 @@
+uuid: 03e501fd-bc31-4222-9e40-3db748195343
+langcode: en
+status: true
+dependencies: {  }
+name: 'event topics'
+vid: event_topics
+description: 'track the topics'
+hierarchy: 0
+weight: 0

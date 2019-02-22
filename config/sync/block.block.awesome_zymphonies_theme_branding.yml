@@ -1,0 +1,25 @@
+uuid: de05a55a-f52f-487e-8952-cc7b9264d813
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - awesome_zymphonies_theme
+_core:
+  default_config_hash: KOycqZ1ivJ1-fhVEjS1eSrxwArwAXHLVXErtSU96lRE
+id: awesome_zymphonies_theme_branding
+theme: awesome_zymphonies_theme
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

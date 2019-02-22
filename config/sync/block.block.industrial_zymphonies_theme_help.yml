@@ -1,0 +1,22 @@
+uuid: c22e5974-c60d-4c12-9d72-6b781ba15ce9
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - industrial_zymphonies_theme
+_core:
+  default_config_hash: zkmDydh84kwex7Ff6MqDt0V8sUcES-bPBTGWR_uVlgg
+id: industrial_zymphonies_theme_help
+theme: industrial_zymphonies_theme
+region: highlighted
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

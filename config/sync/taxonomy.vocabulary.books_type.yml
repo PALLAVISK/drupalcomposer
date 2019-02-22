@@ -1,0 +1,9 @@
+uuid: cff4c412-a78f-429b-8a42-5ff2df574c7c
+langcode: en
+status: true
+dependencies: {  }
+name: 'books type'
+vid: books_type
+description: ''
+hierarchy: 0
+weight: 0

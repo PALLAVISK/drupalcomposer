@@ -1,0 +1,21 @@
+uuid: e33269c6-4a0c-4a5a-8881-d1058af99f55
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_city_metatag
+    - node.type.cities
+  module:
+    - metatag
+id: node.cities.field_city_metatag
+field_name: field_city_metatag
+entity_type: node
+bundle: cities
+label: city_metatag
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

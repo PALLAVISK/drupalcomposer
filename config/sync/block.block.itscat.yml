@@ -1,0 +1,31 @@
+uuid: 58a6b304-04e7-4a3f-abef-600242aaf395
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:image:6119fc6b-15ef-443d-b7f0-55256edc3abc'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: itscat
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:6119fc6b-15ef-443d-b7f0-55256edc3abc'
+settings:
+  id: 'block_content:6119fc6b-15ef-443d-b7f0-55256edc3abc'
+  label: 'its cat '
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

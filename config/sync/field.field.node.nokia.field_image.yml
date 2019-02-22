@@ -1,0 +1,38 @@
+uuid: c00500f1-ac71-4e4b-915b-25088dfd9f04
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.nokia
+  module:
+    - image
+id: node.nokia.field_image
+field_name: field_image
+entity_type: node
+bundle: nokia
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 4d5da9f0-97f4-47c8-9013-34eefa397f9f
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

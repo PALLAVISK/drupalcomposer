@@ -1,0 +1,18 @@
+uuid: 56cc19b2-b12a-47d2-8cb6-850ff54bb54e
+langcode: en
+status: true
+dependencies: {  }
+id: developer
+label: developer
+weight: 5
+is_admin: null
+permissions:
+  - 'administer workflows'
+  - 'create blog content'
+  - 'delete any blog content'
+  - 'delete own blog content'
+  - 'edit any blog content'
+  - 'edit own blog content'
+  - 'revert page revisions'
+  - 'use qed_workflow transition create_new_draft'
+  - 'view blog revisions'

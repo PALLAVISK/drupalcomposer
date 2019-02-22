@@ -1,0 +1,18 @@
+uuid: d26d9589-8c60-4e90-ac12-06f1ee107c17
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Vehicles
+type: vehicles
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
