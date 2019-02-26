@@ -1,0 +1,37 @@
+uuid: 6f6445c3-54fb-44c4-b9ed-9687be950403
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.para1.field_para
+    - field.field.paragraph.para1.field_paragraph_test
+    - paragraphs.paragraphs_type.para1
+  module:
+    - entity_reference_revisions
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    sections: {  }
+id: paragraph.para1.default
+targetEntityType: paragraph
+bundle: para1
+mode: default
+content:
+  field_para:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_paragraph_test:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

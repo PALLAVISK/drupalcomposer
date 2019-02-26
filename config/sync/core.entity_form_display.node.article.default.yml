@@ -10,16 +10,75 @@ dependencies:
     - field.field.node.article.field_gallery
     - field.field.node.article.field_image
     - field.field.node.article.field_metatag
+    - field.field.node.article.field_para_test
     - field.field.node.article.field_tags
     - image.style.thumbnail
     - node.type.article
   module:
     - content_moderation
+    - field_group
     - image
     - media_library
     - metatag
+    - paragraphs
     - path
     - text
+third_party_settings:
+  field_group:
+    group_mytab:
+      children:
+        - path
+        - status
+        - sticky
+        - promote
+        - group_part1
+        - group_part2
+      parent_name: ''
+      weight: 3
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: mytab
+      region: content
+    group_part1:
+      children:
+        - created
+        - uid
+        - title
+        - body
+        - field_tags
+        - field_image
+      parent_name: group_mytab
+      weight: 9
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: part1
+      region: content
+    group_part2:
+      children:
+        - moderation_state
+        - field_demo_field
+        - field_features_of_media
+        - field_gallery
+        - field_metatag
+      parent_name: group_mytab
+      weight: 10
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: part2
+      region: hidden
 _core:
   default_config_hash: vPb_yvhA-xuNoV_yOmOwYxGuHNRIH1CoMK2qi7BSga0
 id: node.article.default
@@ -29,7 +88,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 1
+    weight: 4
     region: content
     settings:
       rows: 9
@@ -38,45 +97,57 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 5
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
   field_demo_field:
     type: options_select
-    weight: 10
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   field_features_of_media:
-    weight: 101
+    weight: 8
     settings: {  }
     third_party_settings: {  }
     type: media_library_widget
     region: content
   field_gallery:
     type: media_library_widget
-    weight: 102
+    weight: 9
     settings: {  }
     third_party_settings: {  }
     region: content
   field_image:
     type: image_image
-    weight: 3
+    weight: 6
     region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
   field_metatag:
-    weight: 103
+    weight: 10
     settings: {  }
     third_party_settings: {  }
     type: metatag_firehose
     region: content
+  field_para_test:
+    type: entity_reference_paragraphs
+    weight: 26
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
   field_tags:
     type: entity_reference_autocomplete_tags
-    weight: 2
+    weight: 5
     region: content
     settings:
       match_operator: CONTAINS
@@ -85,13 +156,13 @@ content:
     third_party_settings: {  }
   moderation_state:
     type: moderation_state_default
-    weight: 100
+    weight: 0
     settings: {  }
     region: content
     third_party_settings: {  }
   path:
     type: path
-    weight: 8
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -99,14 +170,14 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 8
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 9
+    weight: 6
     region: content
     third_party_settings: {  }
   sticky:
@@ -118,7 +189,7 @@ content:
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: 2
     region: content
     settings:
       size: 60
@@ -126,7 +197,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 2
     region: content
     settings:
       match_operator: CONTAINS

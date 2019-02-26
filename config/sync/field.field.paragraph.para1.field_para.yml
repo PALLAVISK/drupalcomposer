@@ -1,0 +1,30 @@
+uuid: 46b1eac5-c325-408a-a8e5-7709778fe257
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para
+    - paragraphs.paragraphs_type.para1
+  module:
+    - entity_reference_revisions
+id: paragraph.para1.field_para
+field_name: field_para
+entity_type: paragraph
+bundle: para1
+label: para
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      para1: para1
+    target_bundles_drag_drop:
+      para1:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

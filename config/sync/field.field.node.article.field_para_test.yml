@@ -1,0 +1,31 @@
+uuid: 3c16ba3d-3acb-4e8f-9172-d4d0fb6379b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_para_test
+    - node.type.article
+    - paragraphs.paragraphs_type.para1
+  module:
+    - entity_reference_revisions
+id: node.article.field_para_test
+field_name: field_para_test
+entity_type: node
+bundle: article
+label: 'para test'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      para1: para1
+    target_bundles_drag_drop:
+      para1:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions
