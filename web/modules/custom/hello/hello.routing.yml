@@ -1,0 +1,21 @@
+hello.form:
+ path: '/MyForm'
+ defaults:
+   _title: 'user form'
+   _form: '\Drupal\hello\Form\MyForm'
+ requirements:
+   _permission: 'access content'
+hello.Resume:
+ path: '/Resume'
+ defaults:
+   _title: 'user form'
+   _form: '\Drupal\hello\Form\Resume'
+ requirements:
+   _permission: 'access content'
+hello.content:
+  path: '/hellodrupal' 
+  defaults:
+    _controller: 'Drupal\hello\Controller\HelloController::content' 
+    _title: 'Hello World'
+  requirements: 
+    _permission: 'access content' 

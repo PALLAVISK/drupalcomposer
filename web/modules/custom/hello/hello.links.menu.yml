@@ -1,0 +1,6 @@
+hello.my_menu:
+  title: 'Hello module'
+  description: 'example of how to make an admin settings page link'
+  parent: system.admin_config_development
+  route_name: hello.form
+  weight: 100
