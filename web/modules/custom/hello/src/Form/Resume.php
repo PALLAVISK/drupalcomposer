@@ -2,7 +2,18 @@
 namespace Drupal\hello\Form;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Logger\LoggerChannelFactory;
+use Symfony\Component\DependencyInjection\ContainerInterface;
+
 class Resume extends FormBase {
+  protected $loggerFactory;
+
+  public function __construct(LoggerChannelFactory $loggerFactory) {
+    $this->loggerFactory = $loggerFactory->get('myform_data');
+  }
+  public static function create(ContainerInterface $container){
+    return new static ($container->get('logger.factory'));
+  }
  
   public function getFormId() {
     return 'resume_form';
@@ -63,7 +74,8 @@ class Resume extends FormBase {
     //    drupal_set_message($key . ': ' . $value);
     //  }
     $name=$form_state->getValue('candidate_name');
-    $this->messenger()->addMessage($this->t('Hello'. $name));
+    $this->loggerFactory->notice('First  name :' . $form_state->getValue('candidate_name') . '  DOB :' . $form_state->getValue('candidate_dob'));
+    $this->messenger()->addMessage($this->t('Hello '. $name));
   }
 }
 

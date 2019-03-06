@@ -19,3 +19,15 @@ hello.content:
     _title: 'Hello World'
   requirements: 
     _permission: 'access content' 
+hello.user:
+  path: '/Hello/{name}'
+  defaults: 
+    _controller: '\Drupal\hello\Controller\HelloName::content' 
+  requirements: 
+    _permission: 'access hello route' 
+hello.node:
+  path: '/HelloNode/{node}'
+  defaults:
+    _controller: '\Drupal\hello\Controller\HelloNode::content'
+  requirements: 
+    _permission: 'access hello route'
